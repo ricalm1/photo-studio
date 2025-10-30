@@ -39,14 +39,19 @@ h6 {
     padding-bottom: 0.5rem; 
 }
 
-
-.intro-text{
-    margin: 0 1.5rem;
-    font-weight: 700;
-    padding-top: 3rem;
-    font-weight:400;
+ul{
+  padding: 2rem
+}
+  
+li {
+  list-style: none;
+  margin: 4rem 0 2rem 3rem ;
+  font-weight: 400;
+  font-family: var(--primary-font-family);
+  font-size: 2.5rem;
 }
 
-  
-
+.contact{
+  margin: 0 0 2rem 5rem;
+}
 
