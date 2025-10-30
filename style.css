@@ -4,4 +4,27 @@
     --body-font-size:1rem;
     --menu-font-size:2.5rem;
     --header-font-size:2rem;
+    --small-header-size:0.75rem;
+    --body-font-color:#FFFFFF;
 }
+
+body{
+    background-color: var(--primary-bg-color);
+    font-family: var(--primary-font-family);
+    color: var(--body-font-color);
+    position: relative;
+}
+
+
+.intro-text{
+    margin-top: ;
+}
+
+.image-grid {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:20px;
+    
+  }
