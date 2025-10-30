@@ -45,13 +45,15 @@ ul{
   
 li {
   list-style: none;
-  margin: 4rem 0 2rem 3rem ;
+  margin: 4rem 0 2rem clamp(1rem, 5vw, 3rem);
   font-weight: 400;
   font-family: var(--primary-font-family);
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4rem, 2.5rem);
+  padding-right: 1rem;
 }
 
-.contact{
-  margin: 0 0 2rem 5rem;
+.contact {
+  margin: 0 0 2rem clamp(1.5rem, 7vw, 5rem);
 }
+
 
