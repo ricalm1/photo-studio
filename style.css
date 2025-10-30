@@ -41,42 +41,56 @@ h6 {
     padding-top: 3rem;
     font-weight:400;
 }
-
 .image-grid {
-    display: grid;
-    height: 50vh;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap:15px;
-    margin-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 10px;                
+  }
   
-  }
-
-  .image{
-    background-color: #262626;
+  .image {
     position: relative;
-
-  }
-
-  .image >p {
-    position:absolute;
-    top: 37%;
-    left: 23%;
-    opacity: 0;
-   
-  }
-
-  .image:hover{
-    transform: scale(1.05);
+    flex: 0 0 40%;            
+    max-width: 40%;           
+    overflow: hidden;
     
   }
-
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  
   .image:hover img {
-    filter: brightness(70%);
+    filter: brightness(50%);
+    transform: scale(1.05);
   }
-
+  
   .image:hover p {
-    opacity: 1; 
-    z-index: 1;
+    opacity: 1;
   }
-
+  
+  
+  @media (max-width: 300px) {
+    .image {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
