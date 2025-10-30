@@ -49,9 +49,34 @@ h6 {
     grid-template-rows: repeat(3, 1fr);
     gap:15px;
     margin-left: 1.5rem;
+  
   }
 
-  .image-grid > img:hover{
-        transform: scale(1.05);
-        
-  } 
+  .image{
+    background-color: #262626;
+    position: relative;
+
+  }
+
+  .image >p {
+    position:absolute;
+    top: 37%;
+    left: 23%;
+    opacity: 0;
+   
+  }
+
+  .image:hover{
+    transform: scale(1.05);
+    
+  }
+
+  .image:hover img {
+    filter: brightness(70%);
+  }
+
+  .image:hover p {
+    opacity: 1; 
+    z-index: 1;
+  }
+
