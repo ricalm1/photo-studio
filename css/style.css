@@ -8,6 +8,7 @@
     --body-font-color:#FFFFFF;
 }
 
+
 body{
     background-color: var(--primary-bg-color);
     font-family: var(--primary-font-family);
@@ -29,7 +30,6 @@ body{
 h1{
     margin:1rem;
     font-weight: 700;
-    
 }
 
 h6 {    
@@ -48,3 +48,5 @@ h6 {
 }
 
   
+
+
