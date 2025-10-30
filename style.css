@@ -6,6 +6,7 @@
     --header-font-size:2rem;
     --small-header-size:0.75rem;
     --body-font-color:#FFFFFF;
+
 }
 
 body{
@@ -13,11 +14,39 @@ body{
     font-family: var(--primary-font-family);
     color: var(--body-font-color);
     position: relative;
+    margin: 0;
+ 
+    
+}
+
+.hamburger{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+h1{
+    margin:0;
+    font-weight: 700;
+}
+
+h6 {    
+    font-size: var(--small-header-size);
+    color: #CACACA;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    
+    
 }
 
 
 .intro-text{
-    margin-top: ;
+    margin: 0 2rem;
+    font-weight: var(--body-font-weight);
+    padding-top: 3rem;
+    font-weight:400;
+    
+
 }
 
 .image-grid {
@@ -25,6 +54,7 @@ body{
     height: 50vh;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 1fr);
-    gap:20px;
+    gap:15px;
+    margin-left: 1.5rem;
     
   }
