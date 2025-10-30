@@ -1,0 +1,48 @@
+
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 10px;                
+  }
+  
+  .image {
+    position: relative;
+    flex: 0 0 40%;            
+    max-width: 40%;           
+    overflow: hidden;
+    
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover img {
+    filter: brightness(50%);
+    transform: scale(1.05);
+  }
+  
+  .image:hover p {
+    opacity: 1;
+  }
+  

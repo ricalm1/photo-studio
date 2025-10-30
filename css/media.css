@@ -1,0 +1,17 @@
+@media(max-width:768px){
+    .image{
+        flex: 
+    }
+}
+
+
+
+
+
+@media (max-width: 300px) {
+    .image {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
