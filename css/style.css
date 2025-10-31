@@ -18,8 +18,11 @@ body{
   
 }
 
-
-
+.intro-text{
+  margin: 0 3rem;
+  padding-top: 3rem;
+  font-weight:400;
+}
 .text{
 margin:1rem;
 }
@@ -58,3 +61,5 @@ padding-right: 1rem;
 .contact {
 margin: 0 0 2rem clamp(1.5rem, 5rem, 5rem);
 }
+
+
